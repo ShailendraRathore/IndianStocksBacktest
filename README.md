@@ -3,61 +3,48 @@ TraderBot: Backtesting NIFTY 50 Strategies
 TraderBot is a Python-based backtesting tool designed to evaluate various trading strategies on NIFTY 50 stocks. It uses historical stock data from Yahoo Finance to simulate trades and calculate performance metrics such as profit/loss percentages, best strategies, and optimal stop-loss/target combinations.
 
 ## Features
-Supports NIFTY 50 Stocks: Includes all NIFTY 50 stocks for backtesting.
-Multiple Trading Strategies:
-Moving Average Crossover
-RSI Strategy
-Bollinger Bands
-MACD Strategy
-Stochastic Oscillator
-Momentum Strategy
-Moving Average Envelope
-Average True Range
-Parabolic SAR
-Ichimoku Cloud
-Donchian Channel
-Customizable Parameters:
-Stop-loss and target ranges
-Commission percentage
-Start and end dates for backtesting
+- Supports NIFTY 50 Stocks: Includes all NIFTY 50 stocks for backtesting.
+- Multiple Trading Strategies:Moving Average Crossover, RSI Strategy, MACD Strategy You can add you own strategy
+### Customizable Parameters:
+- Stop-loss and target ranges
+- Commission percentage
+- Start and end dates for backtesting
 Detailed Summary:
-Best overall strategy
-Best stop-loss and target combination
-Highest return achieved with stock and strategy details
+-  Best overall strategy
+- Best stop-loss and target combination
+- Highest return achieved with stock and strategy details
 Output:
-Results displayed in a tabular format.
-Results saved to a CSV file (backtest_results.csv).
+- Results displayed in a tabular format.
+- Results saved to a CSV file (backtest_results.csv).
 ### Requirements
 Python 3.8 or higher
-Required Python libraries:
-yfinance
-pandas
-numpy
-tabulate
-
-Install the required Python libraries:
+#### Required Python libraries:
+- yfinance
+- pandas
+- numpy
+- tabulate
 
 Usage
 Open the script IndianStockBacktest.py and configure the following parameters:
 
-START_DATE: Start date for backtesting (e.g., '2021-01-01').
-END_DATE: End date for backtesting (e.g., '2025-04-18').
-CASH_AT_HAND: Initial cash for backtesting (e.g., 100000).
-STOP_LOSS_RANGE: List of stop-loss percentages (e.g., [0.02, 0.05, 0.1]).
-TARGET_RANGE: List of target percentages (e.g., [0.02, 0.05, 0.1, 0.15, 0.2]).
-COMMISSION_PERCENT: Commission percentage for trades (e.g., 0.2).
+- START_DATE: Start date for backtesting (e.g., '2021-01-01').
+- END_DATE: End date for backtesting (e.g., '2025-04-18').
+- CASH_AT_HAND: Initial cash for backtesting (e.g., 100000).
+- STOP_LOSS_RANGE: List of stop-loss percentages (e.g., [0.02, 0.05, 0.1]).
+- TARGET_RANGE: List of target percentages (e.g., [0.02, 0.05, 0.1, 0.15, 0.2]).
+- COMMISSION_PERCENT: Commission percentage for trades (e.g., 0.2).
 Run the script:
 
 View the results:
 
 The backtest results will be displayed in the terminal in a tabular format.
 A summary report will show:
-Best overall strategy.
-Best stop-loss and target combination.
-Highest return achieved with stock and strategy details.
-Results will also be saved to backtest_results.csv.
+- Best overall strategy.
+- Best stop-loss and target combination.
+- Highest return achieved with stock and strategy details.
+- Results will also be saved to backtest_results.csv.
 Example Output
-Backtest Results (Grouped by Stock and Strategy)
+
 Stock	Strategy	Stop Loss	Target	Final Portfolio Value	Profit/Loss (%)
 RELIANCE.NS	Moving Average Crossover	0.05	0.10	120000.00	20.00
 TCS.NS	RSI Strategy	0.02	0.15	115000.00	15.00
